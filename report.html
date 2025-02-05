@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Report Incident</title>
+  <link rel="stylesheet" href="Style/report.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Safety Dashboard</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="report.html">Report</a></li>
+      <li><a href="map.html">Safety Map</a></li>
+      <li><a href="admin.html">Admin</a></li>
+      <li><a href="auth.html">Login</a></li>
+    </ul>
+  </nav>
+
+  <!-- Report Incident Content -->
+  <section class="report-container">
+    <h2>Report an Incident</h2>
+    <form>
+      <label for="incident-type">Incident Type:</label>
+      <select id="incident-type" name="incident-type" required>
+        <option value=""></option>
+        <option value="theft">Theft</option>
+        <option value="vandalism">Vandalism</option>
+        <option value="suspicious">Suspicious Activity</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="incident-description">Description:</label>
+      <textarea id="incident-description" name="incident-description" placeholder="Describe the incident..." required></textarea>
+
+      <label for="incident-media">Upload Media (Optional):</label>
+      <input type="file" id="incident-media" name="incident-media" accept="image/*,video/*">
+
+      <button type="submit">Submit Report</button>
+    </form>
+  </section>
+</body>
+</html>

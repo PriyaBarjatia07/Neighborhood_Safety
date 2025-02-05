@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neighborhood Safety Dashboard</title>
+  <link rel="stylesheet" href="Style/style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Safety Dashboard</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="report.html">Report</a></li>
+      <li><a href="map.html">Safety Map</a></li>
+      <li><a href="admin.html">Admin</a></li>
+      <li><a href="auth.html">Login</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Stay Safe, Stay Informed</h1>
+      <p>Track incidents, stay updated, and help create a safer neighborhood.</p>
+      <div class="buttons">
+        <a href="report.html" class="btn">Report Incident</a>
+        <a href="map.html" class="btn secondary">View Map</a>
+        
+      </div>
+    </div>
+  </header>
+
+  <!-- Info Section -->
+  <section class="info">
+    <h2>How It Works</h2>
+    <div class="info-grid">
+      <div class="info-box">
+        <img src="images/report.png" alt="Report icon">
+        <h3>Report Incidents</h3>
+        <p>Quickly report any suspicious activities in your neighborhood.</p>
+      </div>
+      <div class="info-box">
+        <img src="images/map.png" alt="Map icon">
+        <h3>Live Safety Map</h3>
+        <p>Monitor crime trends and stay informed about local incidents.</p>
+      </div>
+      <div class="info-box">
+        <img src="images/alert.png" alt="Alert icon">
+        <h3>Real-Time Alerts</h3>
+        <p>Receive instant notifications for emergencies and alerts.</p>
+      </div>
+    </div>
+  </section>
+  <section class="data-visualization">
+    <h2>Crime Trends</h2>
+    <canvas id="crimeChart"></canvas>
+  </section>
+
+  <!-- Customizable Dashboard -->
+  <section class="dashboard">
+    <h2>Customize Your Safety Dashboard</h2>
+    <p>Select the data you want to see on your dashboard.</p>
+    <label><input type="checkbox" > Crime Rate</label>
+    <label><input type="checkbox"> Emergency Contacts</label>
+    <label><input type="checkbox" > Live Alerts</label>
+    <button class="btn">Update Dashboard</button>
+  </section>
+  <!-- <script>
+    // Chart.js Visualization
+    var ctx = document.getElementById('crimeChart').getContext('2d');
+    var crimeChart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May'],
+        datasets: [{
+          label: 'Crime Rate',
+          data: [12, 19, 8, 14, 10],
+          backgroundColor: 'rgba(255, 99, 132, 0.5)'
+        }]
+      }
+    });
+  </script> -->
+  <footer>
+    <p>&copy; 2024 Neighborhood Safety Dashboard. All rights reserved.</p>
+  </footer>
+</body>
+</html> 
