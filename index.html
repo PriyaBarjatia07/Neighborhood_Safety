@@ -8,18 +8,25 @@
 </head>
 <body>
   <!-- Navbar -->
-  <nav class="navbar">
-    <div class="logo">Safety Dashboard</div>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="report.html">Report</a></li>
-      <li><a href="map.html">Safety Map</a></li>
-      <li><a href="admin.html">Admin</a></li>
-      <li><a href="auth.html">Login</a></li>
-    </ul>
-  </nav>
+  
+  
+<nav class="navbar">
+  <div class="logo-container">
+    <img src="images/logo.jpeg" alt="logo">
+    <div class="logo">Neighborhood Safety Dashboard</div>
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="report.html">Report</a></li>
+    <li><a href="map.html">Safety Map</a></li>
+    <li><a href="admin.html">Admin</a></li>
+    <li><a href="auth.html">Login</a></li>
+  </ul>
+</nav>
 
+  
   <!-- Hero Section -->
+   <div class="image">
   <header class="hero">
     <div class="hero-content">
       <h1>Stay Safe, Stay Informed</h1>
@@ -42,23 +49,18 @@
         <p>Quickly report any suspicious activities in your neighborhood.</p>
       </div>
       <div class="info-box">
-        <img src="images/map.png" alt="Map icon">
+        <img src="images/map.jpg" alt="Map icon">
         <h3>Live Safety Map</h3>
         <p>Monitor crime trends and stay informed about local incidents.</p>
       </div>
       <div class="info-box">
-        <img src="images/alert.png" alt="Alert icon">
+        <img src="images/awareness.webp" alt="Alert icon">
         <h3>Real-Time Alerts</h3>
         <p>Receive instant notifications for emergencies and alerts.</p>
       </div>
     </div>
   </section>
-  <section class="data-visualization">
-    <h2>Crime Trends</h2>
-    <canvas id="crimeChart"></canvas>
-  </section>
-
-  <!-- Customizable Dashboard -->
+   <!-- Customizable Dashboard -->
   <section class="dashboard">
     <h2>Customize Your Safety Dashboard</h2>
     <p>Select the data you want to see on your dashboard.</p>
@@ -82,8 +84,71 @@
       }
     });
   </script> -->
+    <!-- About Section -->
+    <section class="about">
+      <div class="about-content">
+        <h2>About Neighborhood Safety Dashboard</h2>
+        <p>
+          Our platform helps you stay informed about crime and safety in your neighborhood. 
+          We provide real-time alerts, live crime maps, and data visualization to help 
+          you make informed decisions for a safer community.
+        </p>
+        <div class="about-features">
+          <div class="feature">
+            <img src="images/community.webp" alt="Community">
+            <h3>Community Driven</h3>
+            <p>Reports are submitted by residents like you to ensure accurate local data.</p>
+          </div>
+          <div class="feature">
+            <img src="images/security.webp" alt="Security">
+            <h3>Reliable Data</h3>
+            <p>We gather information from verified sources and law enforcement agencies.</p>
+          </div>
+          <div class="feature">
+            <img src="images/awareness.webp" alt="Awareness">
+            <h3>Stay Alert</h3>
+            <p>Get instant notifications for safety alerts in your area.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
   <footer>
     <p>&copy; 2024 Neighborhood Safety Dashboard. All rights reserved.</p>
   </footer>
+  
 </body>
 </html> 
+<!-- <section class="data-visualization">
+    <h2>Crime Trends</h2>
+
+    <div class="chart-controls">
+        <label for="chartType">Select Chart Type:</label>
+        <select id="chartType">
+            <option value="bar">Bar Chart</option>
+            <option value="line">Line Chart</option>
+            <option value="pie">Pie Chart</option>
+        </select>
+
+        <label for="timeRange">Time Range:</label>
+        <select id="timeRange">
+            <option value="1m">Last Month</option>
+            <option value="3m">Last 3 Months</option>
+            <option value="6m">Last 6 Months</option>
+            <option value="1y">Last Year</option>
+        </select>
+
+        <button id="updateChart" class="btn">Update Chart</button>
+    </div>
+
+    <canvas id="crimeChart"></canvas>
+
+    <div class="chart-summary">
+        <h3>Key Insights</h3>
+        <ul id="chartInsights">
+            <li>Highest crime rate recorded in <strong>May</strong>.</li>
+            <li>Overall crime rate has <strong>decreased</strong> in the last 3 months.</li>
+            <li>Theft and vandalism remain the most common crimes.</li>
+        </ul>
+    </div>
+</section> -->
